@@ -1,7 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { CartContext } from "contexts/CartContext";
 import Layout from "layout/layout";
-import NavBar from "layout/navbar";
+
 import { useEffect, useState } from "react";
 import AppService from "services/app.service";
 

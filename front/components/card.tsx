@@ -14,14 +14,13 @@ function Card({ hit }) {
   };
 
   const addToCart = () => {
-    console.log(hit);
     cartContext.products.push({
       id: hit.objectID,
       name: hit.name,
       salePrice: hit.salePrice,
       image: hit.image,
     });
-    console.log(cartContext.products);
+
     AppService.addToCart(
       parseInt(localStorage.getItem("cartId")!),
       cartContext.products
