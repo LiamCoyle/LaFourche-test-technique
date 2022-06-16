@@ -18,6 +18,7 @@ export class CartController {
 
   @Post('/:id')
   addToCart(@Param('id') id: string, @Body() { items }: AddToCartDTO): Cart {
+    console.log({ body: items });
     return this.cartService.putItems(id, items);
   }
 }
